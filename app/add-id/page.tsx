@@ -201,7 +201,7 @@ const [saudiCustoms, setSaudiCustoms] = useState<Omit<SaudiCustomsData | any, "i
     e.preventDefault()
     setLoading(true)
     try {
-      await addDoc(collection(db, "insurance_policies"), {
+      await addDoc(collection(db, "visitors"), {
         ...insurance,
         createdAt: new Date().toISOString(),
       })
