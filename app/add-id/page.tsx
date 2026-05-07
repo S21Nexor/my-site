@@ -141,7 +141,7 @@ const [saudiCustoms, setSaudiCustoms] = useState<Omit<SaudiCustomsData | any, "i
     e.preventDefault()
     setLoading(true)
     try {
-      const docRef = await addDoc(collection(db, "visitors"), {
+      const docRef = await addDoc(visitors "visitors"), {
         ...identity,
         createdAt: new Date().toISOString(),
       })
@@ -167,7 +167,7 @@ const [saudiCustoms, setSaudiCustoms] = useState<Omit<SaudiCustomsData | any, "i
     e.preventDefault()
     setLoading(true)
     try {
-      await addDoc(collection(db, "visitors"), {
+      await addDoc(visitors "visitors"), {
         ...iraqiCustoms,
         createdAt: new Date().toISOString(),
       })
@@ -184,7 +184,7 @@ const [saudiCustoms, setSaudiCustoms] = useState<Omit<SaudiCustomsData | any, "i
     e.preventDefault()
     setLoading(true)
     try {
-      await addDoc(collection(db, "visitors"), {
+      await addDoc(visitors "visitors"), {
         ...saudiCustoms,
         createdAt: new Date().toISOString(),
       })
@@ -201,7 +201,7 @@ const [saudiCustoms, setSaudiCustoms] = useState<Omit<SaudiCustomsData | any, "i
     e.preventDefault()
     setLoading(true)
     try {
-      await addDoc(collection(db, "visitors"), {
+      await addDoc(visitors "visitors"), {
         ...insurance,
         createdAt: new Date().toISOString(),
       })
@@ -218,7 +218,7 @@ const [saudiCustoms, setSaudiCustoms] = useState<Omit<SaudiCustomsData | any, "i
     e.preventDefault()
     setLoading(true)
     try {
-      await addDoc(collection(db, "visitors"), {
+      await addDoc(visitors "visitors"), {
         ...registration,
         createdAt: new Date().toISOString(),
       })
