@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { db } from "@/lib/firebase"
+import { db } from "@/lib/firestore"
 import { collection, addDoc } from "firebase/firestore"
 import { ArrowRight, Plus, Loader2 } from "lucide-react"
 import Link from "next/link"
