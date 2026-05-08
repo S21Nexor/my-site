@@ -141,7 +141,7 @@ const [saudiCustoms, setSaudiCustoms] = useState<Omit<SaudiCustomsData | any, "i
     e.preventDefault()
     setLoading(true)
     try {
-      const docRef = await addDoc(visitors "visitors"), {
+addDoc(collection(db, "visitors")
         ...identity,
         createdAt: new Date().toISOString(),
       })
