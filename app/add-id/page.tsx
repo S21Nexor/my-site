@@ -218,7 +218,7 @@ await addDoc(collection(db, "visitors"), {
     e.preventDefault()
     setLoading(true)
     try {
-await addDoc(collection(db, "visitors"), {itors"), {
+await addDoc(collection(db, "visitors"), {
         ...registration,
         createdAt: new Date().toISOString(),
       })
