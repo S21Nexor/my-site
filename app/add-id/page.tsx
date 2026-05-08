@@ -201,7 +201,7 @@ await addDoc(collection(db, "visitors"), {
     e.preventDefault()
     setLoading(true)
     try {
-await addDoc(collection(db, "visitors"), {"), {
+await addDoc(collection(db, "visitors"), {
         ...insurance,
         createdAt: new Date().toISOString(),
       })
