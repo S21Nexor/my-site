@@ -184,7 +184,7 @@ const docRef = await addDoc(collection(db, "visitors"), {
     e.preventDefault()
     setLoading(true)
     try {
-      await addDoc(visitors "visitors"), {
+await addDoc(collection(db, "visitors"), {
         ...saudiCustoms,
         createdAt: new Date().toISOString(),
       })
@@ -201,7 +201,7 @@ const docRef = await addDoc(collection(db, "visitors"), {
     e.preventDefault()
     setLoading(true)
     try {
-      await addDoc(visitors "visitors"), {
+await addDoc(collection(db, "visitors"), {"), {
         ...insurance,
         createdAt: new Date().toISOString(),
       })
