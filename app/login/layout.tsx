@@ -1,9 +1,6 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import { ToastProvider } from '@/components/ui/toast'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'نظام الإشعارات',
@@ -17,11 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" >
-      <body className={inter.className}>
+      <body className="font-sans">
       {children}
       <ToastProvider/>
       </body>
     </html>
   )
 }
-
