@@ -8,7 +8,7 @@ const firebaseConfig = {
   authDomain: "fawran-5733b.firebaseapp.com",
   databaseURL: "https://fawran-5733b-default-rtdb.firebaseio.com",
   projectId: "fawran-5733b",
-  storageBucket: "fawran-5733b.firebasestorage.app",
+ storageBucket: "fawran-5733b.appspot.com",
   messagingSenderId: "793050907136",
   appId: "1:793050907136:web:765138a85531c008eb0ee5",
   measurementId: "G-3D0ZPNFXKL"

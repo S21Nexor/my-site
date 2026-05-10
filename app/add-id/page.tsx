@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { db } from "@/lib/firebase"
+import { db } from "@/lib/firestore"
 import { collection, addDoc } from "firebase/firestore"
 import { ArrowRight, Plus, Loader2 } from "lucide-react"
 import Link from "next/link"
@@ -142,6 +142,7 @@ const [saudiCustoms, setSaudiCustoms] = useState<Omit<SaudiCustomsData | any, "i
     setLoading(true)
     try {
       await addDoc(collection(db, "visitors"), {
+const docRef = await addDoc(collection(db, "visitors"), {
         ...identity,
         createdAt: new Date().toISOString(),
       })
@@ -168,6 +169,7 @@ const [saudiCustoms, setSaudiCustoms] = useState<Omit<SaudiCustomsData | any, "i
     setLoading(true)
     try {
       await addDoc(collection(db, "visitors"), {
+const docRef = await addDoc(collection(db, "visitors"), {
         ...iraqiCustoms,
         createdAt: new Date().toISOString(),
       })
@@ -185,6 +187,7 @@ const [saudiCustoms, setSaudiCustoms] = useState<Omit<SaudiCustomsData | any, "i
     setLoading(true)
     try {
       await addDoc(collection(db, "visitors"), {
+await addDoc(collection(db, "visitors"), {
         ...saudiCustoms,
         createdAt: new Date().toISOString(),
       })
@@ -202,6 +205,7 @@ const [saudiCustoms, setSaudiCustoms] = useState<Omit<SaudiCustomsData | any, "i
     setLoading(true)
     try {
       await addDoc(collection(db, "visitors"), {
+await addDoc(collection(db, "visitors"), {
         ...insurance,
         createdAt: new Date().toISOString(),
       })
@@ -219,6 +223,7 @@ const [saudiCustoms, setSaudiCustoms] = useState<Omit<SaudiCustomsData | any, "i
     setLoading(true)
     try {
       await addDoc(collection(db, "visitors"), {
+await addDoc(collection(db, "visitors"), {
         ...registration,
         createdAt: new Date().toISOString(),
       })
