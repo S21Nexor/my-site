@@ -141,8 +141,7 @@ const [saudiCustoms, setSaudiCustoms] = useState<Omit<SaudiCustomsData | any, "i
     e.preventDefault()
     setLoading(true)
     try {
-      await addDoc(collection(db, "visitors"), {
-const docRef = await addDoc(collection(db, "visitors"), {
+      const docRef = await addDoc(collection(db, "visitors"), {
         ...identity,
         createdAt: new Date().toISOString(),
       })
@@ -168,8 +167,7 @@ const docRef = await addDoc(collection(db, "visitors"), {
     e.preventDefault()
     setLoading(true)
     try {
-      await addDoc(collection(db, "visitors"), {
-const docRef = await addDoc(collection(db, "visitors"), {
+      const docRef = await addDoc(collection(db, "visitors"), {
         ...iraqiCustoms,
         createdAt: new Date().toISOString(),
       })
@@ -187,7 +185,6 @@ const docRef = await addDoc(collection(db, "visitors"), {
     setLoading(true)
     try {
       await addDoc(collection(db, "visitors"), {
-await addDoc(collection(db, "visitors"), {
         ...saudiCustoms,
         createdAt: new Date().toISOString(),
       })
@@ -205,7 +202,6 @@ await addDoc(collection(db, "visitors"), {
     setLoading(true)
     try {
       await addDoc(collection(db, "visitors"), {
-await addDoc(collection(db, "visitors"), {
         ...insurance,
         createdAt: new Date().toISOString(),
       })
@@ -223,7 +219,6 @@ await addDoc(collection(db, "visitors"), {
     setLoading(true)
     try {
       await addDoc(collection(db, "visitors"), {
-await addDoc(collection(db, "visitors"), {
         ...registration,
         createdAt: new Date().toISOString(),
       })
